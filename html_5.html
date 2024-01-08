@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="html_5.css">
     <style>
 
-        nav> ul >li{
+        nav ul li{
 
-            display: inline;
+            display: flex;
             text-decoration: none;
             margin-right: 15px;
 
@@ -18,11 +18,29 @@
 
             text-decoration: none;
         }
+        
 
         footer{
             margin-top: 50px;
             text-align: center;
         }
+
+        /* nested menu styles */
+
+        nav li .dropdown{
+
+
+            display: none;
+            position: absolute;
+            background-color: lightyellow;
+            margin-top: 10px;
+        }
+        nav li:hover .dropdown{
+
+            display: block;
+        }
+
+
     </style>
 </head>
 <body>
@@ -31,7 +49,19 @@
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
+                <li>
+                    <a href="blogs.html">Blogs</a>
+                    
+                    <ul class="dropdown">
+                        <br>
+                        <li><a href="video.html">video</a></li>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+
+                
+                </li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
@@ -67,6 +97,11 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt in doloribus odio, saepe architecto nostrum tempora consequatur deserunt voluptas, excepturi blanditiis fuga ut neque nam, eaque atque quam! Natus veritatis voluptatem voluptatum dolorum, odit, quo nihil laboriosam perferendis dolor tenetur sequi optio iste. Ipsa mollitia quaerat provident sint voluptatibus itaque doloremque ipsam repellat, laudantium distinctio praesentium incidunt dolore unde assumenda hic voluptates explicabo. Amet saepe consequuntur eos? Tenetur quam est, quas dolorem placeat quod excepturi aut voluptate in inventore neque saepe ducimus magni nobis, deleniti incidunt asperiores eligendi perspiciatis rem veritatis, aperiam laboriosam vero. Facilis facere qui maxime quia iusto!</p>
             </section>
         </article>
+
+
+
+        
+        </ul>
     </main>
 
 
